@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- BDE Entry FS --></label>
+        <name>npsp__BDE_Entry_FS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- BDE List FS --></label>
+        <name>npsp__BDE_List_FS</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Contact Merge Found FS --></label>
+        <name>npsp__ContactMergeFoundFS</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Data Quality Description --></label>
+        <name>Data_Quality_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Score --></label>
+        <name>Data_Quality_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Languages --></label>
+        <name>Languages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation><!-- Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary</masterLabel>
+            <translation><!-- Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tertiary</masterLabel>
+            <translation><!-- Tertiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Een Alternatief E-mailadres is een optioneel vierde e-mailadres: Niet persoonlijk, voorkeur, of werk e-mailadres.</help>
+        <label><!-- Alternate Email --></label>
+        <name>npe01__AlternateEmail__c</name>
+    </fields>
+    <fields>
+        <help>Zie Voorkeur E-mailadres veld.</help>
+        <label><!-- Personal Email --></label>
+        <name>npe01__HomeEmail__c</name>
+    </fields>
+    <fields>
+        <help>Formule: Gebruik het Primaire Adrestype veld om het Huisadres van Postadres of Ander Adres te bepalen.</help>
+        <label><!-- Home Address --></label>
+        <name>npe01__Home_Address__c</name>
+    </fields>
+    <fields>
+        <help>Formule: In volgorde van voorkeur, het SYSTEEM_AccountType veld, het Account Type veld, en &quot;Organisatie&quot;.</help>
+        <label><!-- Organization Type --></label>
+        <name>npe01__Organization_Type__c</name>
+    </fields>
+    <fields>
+        <help>Formule: Als het Primaire Adres gelijk is aan Anders, het Postadres. Als het Secundaire Adrestype gelijk is aan Anders, het Anders Adres.</help>
+        <label><!-- Other Address --></label>
+        <name>npe01__Other_Address__c</name>
+    </fields>
+    <fields>
+        <help>Welk telefoonnummer moet er gebruikt worden in de communicatie met deze Contactpersoon?</help>
+        <label><!-- Preferred Phone --></label>
+        <name>npe01__PreferredPhone__c</name>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation>Thuis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation>Mobiel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Overig</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation>Werk</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Welk e-mailadres moet er gebruikt worden in de communicatie met deze Contactpersoon?</help>
+        <label><!-- Preferred Email --></label>
+        <name>npe01__Preferred_Email__c</name>
+        <picklistValues>
+            <masterLabel>Alternate</masterLabel>
+            <translation>Alternatief</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal</masterLabel>
+            <translation>Persoonlijk</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation>Werk</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Welk type adres is het postadres?</help>
+        <label><!-- Primary Address Type --></label>
+        <name>npe01__Primary_Address_Type__c</name>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation>Huis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Anders</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation>Werk</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Sluit deze Contactpersoon uit van Eén-op-Eén of Bucket Account verwerking.</help>
+        <label><!-- Private --></label>
+        <name>npe01__Private__c</name>
+    </fields>
+    <fields>
+        <help>Welk type adres is het andere adres?</help>
+        <label><!-- Secondary Address Type --></label>
+        <name>npe01__Secondary_Address_Type__c</name>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation>Huis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Anders</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation>Werk</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>VEROUDERD - Geeft aan welk model zorgt voor Account Relatiegedrag. Individu (Bucket) of Eén-op-Eén.</help>
+        <label><!-- DEPRECATED - _SYSTEM: ACCOUNT PROCESSOR --></label>
+        <name>npe01__SystemAccountProcessor__c</name>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation>Individu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One-to-One</masterLabel>
+            <translation>Eén-op-één</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Formule: &quot;Individueel&quot; of &quot;Organisatie&quot; afhankelijk van Account instellingen.</help>
+        <label><!-- Type of Account --></label>
+        <name>npe01__Type_of_Account__c</name>
+    </fields>
+    <fields>
+        <help>Zie Voorkeur E-mailadres veld.</help>
+        <label><!-- Work Email --></label>
+        <name>npe01__WorkEmail__c</name>
+    </fields>
+    <fields>
+        <help>Zie &apos;Voorkeur Telefoon&apos; veld.</help>
+        <label><!-- Work Phone --></label>
+        <name>npe01__WorkPhone__c</name>
+    </fields>
+    <fields>
+        <help>Formule: Als het Primaire Adrestype gelijk is aan Werk, het Postadres. Als het Secundaire Adres type gelijk is aan Werk, het Ander Adres.</help>
+        <label><!-- Work Address --></label>
+        <name>npe01__Work_Address__c</name>
+    </fields>
+    <fields>
+        <help>Het gemiddelde Bedrag van alle Gewonnen Opportunities gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Average Gift --></label>
+        <name>npo02__AverageAmount__c</name>
+    </fields>
+    <fields>
+        <help>De som van Gewonnen Opportunities in het Beste Gift Jaar.</help>
+        <label><!-- Best Gift Year Total --></label>
+        <name>npo02__Best_Gift_Year_Total__c</name>
+    </fields>
+    <fields>
+        <help>Het jaar van het grootste totaalbedrag van Gewonnen Opportunities gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol. Zie ook Beste Gift Jaar Totaal.</help>
+        <label><!-- Best Gift Year --></label>
+        <name>npo02__Best_Gift_Year__c</name>
+    </fields>
+    <fields>
+        <help>De oudste Sluitingsdatum van een Gewonnen Opportunity met een Bedrag groter dan nul gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- First Gift Date --></label>
+        <name>npo02__FirstCloseDate__c</name>
+    </fields>
+    <fields>
+        <help>Formule: Kopie van het Postadres van het Huishouden (ook een formule)</help>
+        <label><!-- Household Mailing Address --></label>
+        <name>npo02__Formula_HouseholdMailingAddress__c</name>
+    </fields>
+    <fields>
+        <help>Formule: Simpele formule van het Huishouden Telefoon veld</help>
+        <label><!-- Household Phone --></label>
+        <name>npo02__Formula_HouseholdPhone__c</name>
+    </fields>
+    <fields>
+        <help>Bepaalt de volgorde waarin namen van Contactpersonen gebruikt worden om een Huishouden naam te genereren.</help>
+        <label><!-- Household Naming Order --></label>
+        <name>npo02__Household_Naming_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>npo02__Household__c</name>
+        <relationshipLabel><!-- Household Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Het grootste Bedrag van een Gewonnen Opportunity gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Largest Gift --></label>
+        <name>npo02__LargestAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Household Gift Date --></label>
+        <name>npo02__LastCloseDateHH__c</name>
+    </fields>
+    <fields>
+        <help>De Sluitingsdatum van de meest recente Gewonnen Opportunity gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Last Gift Date --></label>
+        <name>npo02__LastCloseDate__c</name>
+    </fields>
+    <fields>
+        <help>Het Bedrag van de meest recente Gewonnen Lidmaatschap Opportunity gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Last Membership Amount --></label>
+        <name>npo02__LastMembershipAmount__c</name>
+    </fields>
+    <fields>
+        <help>De meest recente Sluitingsdatum van een Gewonnen Lidmaatschap Opportunity gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Last Membership Date --></label>
+        <name>npo02__LastMembershipDate__c</name>
+    </fields>
+    <fields>
+        <help>Het Niveau van de meesst recente Gewonnen Lidmaatschap Opportunity gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Last Membership Level --></label>
+        <name>npo02__LastMembershipLevel__c</name>
+    </fields>
+    <fields>
+        <help>De Herkomst van de meest recente Gewonnen Lidamaatschap Opportunity gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Last Membership Origin --></label>
+        <name>npo02__LastMembershipOrigin__c</name>
+    </fields>
+    <fields>
+        <help>Het Bedrag van de meest recente Gewonnen Opportunity gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Last Gift Amount --></label>
+        <name>npo02__LastOppAmount__c</name>
+    </fields>
+    <fields>
+        <help>De Lidmaatschap Einddatum van de meest recente Lidmaatschap Opportunity gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Membership End Date --></label>
+        <name>npo02__MembershipEndDate__c</name>
+    </fields>
+    <fields>
+        <help>De Begindatum van de oudste Lidmaatschap Opportunity gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Membership Join Date --></label>
+        <name>npo02__MembershipJoinDate__c</name>
+    </fields>
+    <fields>
+        <help>Selecteer om de naam van de Contactpersoon uit te sluiten van verschillende Huishouden Namen.</help>
+        <label><!-- Naming Exclusions --></label>
+        <name>npo02__Naming_Exclusions__c</name>
+        <picklistValues>
+            <masterLabel>Household__c.Formal_Greeting__c</masterLabel>
+            <translation>Huishouden__c.Formele_Begroeting__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household__c.Informal_Greeting__c</masterLabel>
+            <translation>Huishouden__c.Informele_Begroeting__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household__c.Name</masterLabel>
+            <translation>Huishouden__c.Naam</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Het totaal aantal Gewonnen Opportunities met een Bedrag groter dan nul gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Total Number of Gifts --></label>
+        <name>npo02__NumberOfClosedOpps__c</name>
+    </fields>
+    <fields>
+        <help>Het totaal aantal Gewonnen Lidmaatschap Opportunities gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Number of Memberships --></label>
+        <name>npo02__NumberOfMembershipOpps__c</name>
+    </fields>
+    <fields>
+        <help>Het totaalbedrag van Gewonnen Opportunities van twee jaar geleden gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Total Gifts Two Years Ago --></label>
+        <name>npo02__OppAmount2YearsAgo__c</name>
+    </fields>
+    <fields>
+        <help>Het totaalbedrag van Gewonnen Opportunities in de laatste N dagen gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol. De waarde N is gedefinieerd in de Huishouden Instellingen.</help>
+        <label><!-- Total Gifts Last N Days --></label>
+        <name>npo02__OppAmountLastNDays__c</name>
+    </fields>
+    <fields>
+        <help>Formule: Totaal Giften Vorig Jaar op gerelateerd Huishouden.</help>
+        <label><!-- Total Household Gifts Last Year --></label>
+        <name>npo02__OppAmountLastYearHH__c</name>
+    </fields>
+    <fields>
+        <help>Het totaalbedrag van Gewonnen Opportunities van vorig jaar gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Total Gifts Last Year --></label>
+        <name>npo02__OppAmountLastYear__c</name>
+    </fields>
+    <fields>
+        <help>Formule: Totaal Giften Huidig Jaar op gerelateerd Huishouden.</help>
+        <label><!-- Total Household Gifts This Year --></label>
+        <name>npo02__OppAmountThisYearHH__c</name>
+    </fields>
+    <fields>
+        <help>Het totaalbedrag van Gewonnen Opportunities van het huidige jaar gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Total Gifts This Year --></label>
+        <name>npo02__OppAmountThisYear__c</name>
+    </fields>
+    <fields>
+        <help>Het totaal aantal Gewonnen Opportunities met een Bedrag groter dan nul van twee jaar geleden gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Number of Gifts Two Years Ago --></label>
+        <name>npo02__OppsClosed2YearsAgo__c</name>
+    </fields>
+    <fields>
+        <help>Het totaal aantal van Gewonnen Opportunities in de laatste N dagen gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol. De waarde N is gedefinieerd in de Huishouden Instellingen.</help>
+        <label><!-- Number of Gifts Last N Days --></label>
+        <name>npo02__OppsClosedLastNDays__c</name>
+    </fields>
+    <fields>
+        <help>Het totaal aantal Gewonnen Opportunities met een Bedrag groter dan nul van vorig jaar gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Number of Gifts Last Year --></label>
+        <name>npo02__OppsClosedLastYear__c</name>
+    </fields>
+    <fields>
+        <help>Het totaal aantal Gewonnen Opportunities met een Bedrag groter dan nul van het huidige jaar gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Number of Gifts This Year --></label>
+        <name>npo02__OppsClosedThisYear__c</name>
+    </fields>
+    <fields>
+        <help>Het kleinste Bedrag van een Gewonnen Opportunity gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Smallest Gift --></label>
+        <name>npo02__SmallestAmount__c</name>
+    </fields>
+    <fields>
+        <help>Het totaalbedrag aan Soft Credit in het vorig jaar.</help>
+        <label><!-- Soft Credit Last Year --></label>
+        <name>npo02__Soft_Credit_Last_Year__c</name>
+    </fields>
+    <fields>
+        <help>Het totaalbedrag aan Soft Credit in het huidig jaar.</help>
+        <label><!-- Soft Credit This Year --></label>
+        <name>npo02__Soft_Credit_This_Year__c</name>
+    </fields>
+    <fields>
+        <help>Het totaalbedrag aan Soft Credit in de levensduur van de Contactpersoon.</help>
+        <label><!-- Soft Credit Total --></label>
+        <name>npo02__Soft_Credit_Total__c</name>
+    </fields>
+    <fields>
+        <help>Het totaalbedrag aan Soft Credit van twee jaar geleden.</help>
+        <label><!-- Soft Credit Two Years Ago --></label>
+        <name>npo02__Soft_Credit_Two_Years_Ago__c</name>
+    </fields>
+    <fields>
+        <label><!-- _SYSTEM: HOUSEHOLD PROCESSOR-DEPRECATED --></label>
+        <name>npo02__SystemHouseholdProcessor__c</name>
+        <picklistValues>
+            <masterLabel>All Individual Contacts</masterLabel>
+            <translation>Alle contactpersonen van individu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All New or Edited Contacts</masterLabel>
+            <translation>Alle nieuwe of bewerkte contactpersonen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Contacts</masterLabel>
+            <translation>Geen contactpersonen</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Het totaalbedrag van Gewonnen Lidmaatschap Opportunities gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Total Membership Amount --></label>
+        <name>npo02__TotalMembershipOppAmount__c</name>
+    </fields>
+    <fields>
+        <help>De som van Gewonnen Opportunity Bedragen gerelateerd aan een Contactpersoon door een Primair Opportunity Contactpersoon Rol.</help>
+        <label><!-- Total Gifts --></label>
+        <name>npo02__TotalOppAmount__c</name>
+    </fields>
+    <fields>
+        <help>Formule: Totaal Giften op gerelateerd Huishouden.</help>
+        <label><!-- Total Household Gifts --></label>
+        <name>npo02__Total_Household_Gifts__c</name>
+    </fields>
+    <fields>
+        <help>Als dit adres verificatie vereist, klik de Verifieer Adres knop bovenin de Adrespagina. Zie de Help documentatie in de &quot;Power of Us Hub&quot; voor meer informatie.</help>
+        <label><!-- Address Verification Status --></label>
+        <name>npsp__Address_Verification_Status__c</name>
+    </fields>
+    <fields>
+        <help>Opzoekrelatie naar de Batch waarin dit Contactpersoon is gemaakt.</help>
+        <label><!-- Batch --></label>
+        <name>npsp__Batch__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Het huidige Postadres van de Contactpersoon.</help>
+        <label><!-- Current Address --></label>
+        <name>npsp__Current_Address__c</name>
+        <relationshipLabel><!-- Contacts (Current Address) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indien aangevinkt, deze optie markeert het Contactpersoon als overleden, en sluit deze persoon uit van de Huishouden Naamgeving, e-mails, en telefoongesprekken.</help>
+        <label><!-- Deceased --></label>
+        <name>npsp__Deceased__c</name>
+    </fields>
+    <fields>
+        <help>Indien aangevinkt wordt deze Contactpersoon uitgesloten van e-mails en telefoongesprekken.</help>
+        <label><!-- Do Not Contact --></label>
+        <name>npsp__Do_Not_Contact__c</name>
+    </fields>
+    <fields>
+        <help>Indien aangevinkt wordt de Contactpersoon uitgesloten van de Formele Begroeting.</help>
+        <label><!-- Exclude from Household Formal Greeting --></label>
+        <name>npsp__Exclude_from_Household_Formal_Greeting__c</name>
+    </fields>
+    <fields>
+        <help>Indien aangevinkt wordt de Contactpersoon uitgesloten van de Informele Begroeting.</help>
+        <label><!-- Exclude from Household Informal Greeting --></label>
+        <name>npsp__Exclude_from_Household_Informal_Greeting__c</name>
+    </fields>
+    <fields>
+        <help>Indien aangevinkt wordt de Contactpersoon uitgesloten van de Naam van het Huishouden.</help>
+        <label><!-- Exclude from Household Name --></label>
+        <name>npsp__Exclude_from_Household_Name__c</name>
+    </fields>
+    <fields>
+        <help>Het bedrag van de eerste Soft Credit.</help>
+        <label><!-- First Soft Credit Amount --></label>
+        <name>npsp__First_Soft_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <help>De datum van de eerste Soft Credit.</help>
+        <label><!-- First Soft Credit Date --></label>
+        <name>npsp__First_Soft_Credit_Date__c</name>
+    </fields>
+    <fields>
+        <help>Houdt het ID van het huidige huishouden, of het nu een Huishouden Account is of een Huishouden Object.</help>
+        <label><!-- HHId --></label>
+        <name>npsp__HHId__c</name>
+    </fields>
+    <fields>
+        <help>Het bedrag van de grootste Soft Credit.</help>
+        <label><!-- Largest Soft Credit Amount --></label>
+        <name>npsp__Largest_Soft_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <help>De datum van de grootste Soft Credit.</help>
+        <label><!-- Largest Soft Credit Date --></label>
+        <name>npsp__Largest_Soft_Credit_Date__c</name>
+    </fields>
+    <fields>
+        <help>Het bedrag van de meest recente Soft Credit.</help>
+        <label><!-- Last Soft Credit Amount --></label>
+        <name>npsp__Last_Soft_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <help>De datum van de meest recente Soft Credit</help>
+        <label><!-- Last Soft Credit Date --></label>
+        <name>npsp__Last_Soft_Credit_Date__c</name>
+    </fields>
+    <fields>
+        <help>Het totaal aantal Soft Credits die zijn gesloten in de laatste N dagen. De waarde voor N is gedefinieerd in de NPSP Instellingen.</help>
+        <label><!-- Number of Soft Credits Last N Days --></label>
+        <name>npsp__Number_of_Soft_Credits_Last_N_Days__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal Soft Credits van vorig jaar.</help>
+        <label><!-- Number of Soft Credits Last Year --></label>
+        <name>npsp__Number_of_Soft_Credits_Last_Year__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal Soft Credits van dit jaar.</help>
+        <label><!-- Number of Soft Credits This Year --></label>
+        <name>npsp__Number_of_Soft_Credits_This_Year__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal Soft Credits van twee jaar geleden.</help>
+        <label><!-- Number of Soft Credits Two Years Ago --></label>
+        <name>npsp__Number_of_Soft_Credits_Two_Years_Ago__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal Soft Credits.</help>
+        <label><!-- Number of Soft Credits --></label>
+        <name>npsp__Number_of_Soft_Credits__c</name>
+    </fields>
+    <fields>
+        <help>Wordt gebruikt om de Primaire Verwante Organisatie te volgen van de desbetreffende Contactpersoon.</help>
+        <label><!-- Primary Affiliation --></label>
+        <name>npsp__Primary_Affiliation__c</name>
+        <relationshipLabel><!-- Do Not Use.  Use Organization Affiliations. --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Dit is aangevinkt wanneer de gebruiker de Primaire Contactpersoon is op zijn Account. De Primaire Contactpersoon kan gewijzigd worden op het Account.</help>
+        <label><!-- Primary Contact --></label>
+        <name>npsp__Primary_Contact__c</name>
+    </fields>
+    <fields>
+        <help>Het totaalbedrag aan Soft Credit, gesloten in de laatste N dagen. De waarde voor N is gedefinieerd in de NPSP Instellingen.</help>
+        <label><!-- Soft Credit Last N Days --></label>
+        <name>npsp__Soft_Credit_Last_N_Days__c</name>
+    </fields>
+    <fields>
+        <help>Indien aangevinkt, dan overschrijft het huidige adres opzoekrelatie van de Contactpersoon het adres van het Huishouden of het seizoensgebonden adres.</help>
+        <label><!-- Address Override --></label>
+        <name>npsp__is_Address_Override__c</name>
+    </fields>
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label>Contactpersoon Details</label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label>Donatie Informatie</label>
+            <section>Donation Information</section>
+        </sections>
+        <sections>
+            <label>Donatie Totalen</label>
+            <section>Donation Totals</section>
+        </sections>
+        <sections>
+            <label>Huishouden Adres</label>
+            <section>Household Address</section>
+        </sections>
+        <sections>
+            <label>Huishouden Donatie Informatie</label>
+            <section>Household Donation Info</section>
+        </sections>
+        <sections>
+            <label>Lidmaatschap Informatie</label>
+            <section>Membership Information</section>
+        </sections>
+        <sections>
+            <label>Overige</label>
+            <section>Misc</section>
+        </sections>
+        <sections>
+            <label>Soft Credit Totalen</label>
+            <section>Soft Credit Totals</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Relationships_Viewer --></label>
+        <name>npe4__Relationships_Viewer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Copy_Address_to_Household --></label>
+        <name>npo02__Copy_Address_to_Household</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Household --></label>
+        <name>npo02__Household</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Merge_Contacts --></label>
+        <name>npsp__Merge_Contacts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Gift --></label>
+        <name>npsp__New_Gift</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Recalculate_Rollups --></label>
+        <name>npsp__Recalculate_Rollups</name>
+    </webLinks>
+</CustomObjectTranslation>
